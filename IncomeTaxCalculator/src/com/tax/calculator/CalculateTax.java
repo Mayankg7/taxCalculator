@@ -17,7 +17,7 @@ public class CalculateTax {
 		return singleTaxInstance;
 	}
 
-	public double calculateIncomeTax(String countryCode, Double income, Double investmentDecl) {
+	public synchronized double calculateIncomeTax(String countryCode, Double income, Double investmentDecl) {
 
 		CountrySlabRate countryTaxForamt = CountryTaxSlab.getTaxFormat(CountryType.valueOf(countryCode));
 
