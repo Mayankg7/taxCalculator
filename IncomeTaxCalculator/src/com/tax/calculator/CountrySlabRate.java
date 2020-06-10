@@ -11,7 +11,7 @@ public abstract class CountrySlabRate {
 	// Do subclass level processing in this method
 	protected abstract Map<Double, Float> slabRate();
 
-	private CountryType country = null;
+	private CountryType country;
 	protected static double nonTaxableIncome;
 	protected static double investmentLimit;
 
