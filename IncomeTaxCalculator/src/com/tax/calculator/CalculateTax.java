@@ -47,7 +47,6 @@ public class CalculateTax {
 		if (income <= nonTaxableIncome) {
 			return 0.00;
 		}
-		nonTaxableIncome = 8.0;
 		for (Map.Entry<Double, Float> entry : taxSlabs.entrySet()) {
 			flag = true;
 			if (income > entry.getKey()) {
